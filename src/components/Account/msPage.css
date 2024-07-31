@@ -1,0 +1,249 @@
+/* Style for the main container */
+.messaging-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style for the welcome text */
+.welcome-text {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style for the message container */
+.message-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Style for the autocomplete container */
+.autocomplete {
+  flex: 1;
+  margin-right: 20px;
+}
+.green-dot {
+  width: 8px; /* Adjust the size as needed */
+  height: 8px; /* Adjust the size as needed */
+  background-color: green;
+  border-radius: 50%; /* Makes it a circle */
+  display: inline-block; /* Allows it to appear inline with text */
+  margin-left: 5px; /* Adjust the spacing from the text */
+}
+
+/* Style for the search input */
+.ui.search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style for the suggestions container */
+.suggestions {
+  position: absolute;
+  top: 570px;
+  left: 03;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 20%;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+/* Style for each suggestion item */
+.suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Style for the warning message */
+.warning-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Style for the selected contacts container */
+.selected-contacts {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+.selected-contacts {
+  height: 400px; /* Adjust the height as needed */
+}
+
+/* Style for each selected contact */
+.selected-contact {
+  display: absolute;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for the contact email */
+.contact-info {
+  flex-grow: 1; /* Allow it to grow and take available space */
+}
+
+.contact-actions {
+  display: flex; /* Add some space between the buttons */
+}
+
+/* Style for the "Remove Contact" and "Chat" buttons */
+.contact-actions button {
+  padding: 2px 30px;
+  margin-left: 40px;
+  font-size: 12px;
+}
+.chat-messages {
+  max-height: 300px; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Add vertical scrollbar when content overflows */
+}
+.chat-dialog {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Style for the chat header */
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Style for the chat messages container */
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* Style for each chat message */
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Style for sent messages */
+.sent {
+  background-color: #007bff;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Style for received messages */
+.received {
+  background-color: #f8f8f8;
+  color: #333;
+  align-self: flex-start;
+}
+
+/* Style for the message info (sender name and timestamp) */
+.message-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Style for the sender name */
+.sender-name {
+  font-weight: bold;
+}
+
+/* Style for the timestamp */
+.timestamp {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Style for the chat input container */
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* Style for the message input */
+.chat-input input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Style for the send button */
+.chat-input button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  width: 19%;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover state for the send button */
+.chat-input button:hover {
+  background-color: #0056b3;
+}
+
+/* msPage.css */
+
+/* Style for the chat overlay */
+.chat-dialog.overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+/* Style for the chat overlay backdrop */
+.chat-overlay-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 998; /* Ensure it's behind the chat overlay but above other content */
+}

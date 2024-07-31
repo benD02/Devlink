@@ -1,0 +1,55 @@
+.acnavbar {
+  background-color: #333;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  color: white;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
+
+/* CSS for the AccountPage component */
+.account-info {
+  border: 1px solid #ccc;
+  padding: 30px; /* Increase padding for more space */
+  border-radius: 10px; /* Increase border radius for a rounder look */
+  max-width: 500px; /* Increase max-width for a wider card */
+  margin: 0 auto;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.welcome-text {
+  font-size: 28px; /* Increase font-size for a bigger welcome text */
+  font-weight: bold;
+  margin-bottom: 15px; /* Increase margin-bottom for more spacing */
+}
+
+.name {
+  font-size: 18px; /* Increase font-size for bigger name and email */
+  margin-bottom: 10px; /* Increase margin-bottom for more spacing */
+}
+
+.logout-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Increase padding for a bigger button */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px; /* Increase font-size for a bigger button text */
+  margin-top: 15px; /* Increase margin-top for more spacing */
+}

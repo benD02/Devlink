@@ -1,0 +1,44 @@
+/* FindJob.css */
+.job-type-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.line-divider {
+  width: 35%;
+  height: 2px;
+  background-color: #fff;
+  margin: 40px auto; /* Increase the margin value for more space */
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.job-type-switch button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 320px;
+}
+
+.job-type-switch button.active {
+  background-color: #0056b3;
+}
+
+.job-pagetitle {
+  text-align: center;
+  top: 2%;
+  background-color: #383838;
+  margin-bottom: 4%;
+  color: #fff;
+}
+
+.job-page {
+  margin-bottom: 5%;
+  background-color: #383838;
+}

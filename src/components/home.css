@@ -1,0 +1,188 @@
+/* External CSS for the Home component */
+.header-container {
+  margin-top: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: center;
+}
+
+.header-image {
+  position: relative;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+}
+
+.header-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100.5%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s;
+}
+
+.header-image:hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.welcome-message {
+  position: absolute;
+  left: 0%;
+  top: 15%;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+  font-size: 20px; /* Added "px" to the font size value */
+}
+
+.header-image:hover .welcome-message {
+  opacity: 1;
+}
+
+.content {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.featured-freelancers {
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: large;
+}
+
+.featured-customer {
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: large;
+}
+
+.freelancer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.freelancer-card {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.freelancer-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.freelancer-name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.freelancer-description {
+  margin-top: 10px;
+}
+
+.freelancer-rating {
+  margin-top: 10px;
+}
+
+.see-more-button {
+  margin-top: 20px;
+  background-color: #007bff; /* Set the desired color */
+  color: #fff; /* Set the text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.line-divider {
+  width: 20%;
+  height: 2px;
+  background-color: #000000;
+  margin: 40px auto; /* Increase the margin value for more space */
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+/* Reset margin and padding for the body and html elements */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Apply styles to the .newsletter-section */
+.newsletter-section {
+  padding: 40px;
+  background-color: #f1f1f1;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-left: -40px;
+  margin-right: -40px;
+  margin-bottom: -40px;
+}
+
+.newsletter-section h2 {
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  width: 400px;
+  flex-direction: column; /* Change from row to column */
+  align-items: center; /* Center horizontally */
+  margin-bottom: 20px;
+}
+
+.newsletter-input {
+  padding: 10px;
+  width: 400px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.newsletter-button {
+  position: center;
+  margin-left: 1.7%;
+  padding: 10px;
+  background-color: #1f9b00;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  font-size: 16px;
+  cursor: pointer;
+}

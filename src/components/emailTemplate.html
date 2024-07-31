@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    /* Your CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      color: #007BFF;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      width: 150px;
+      height: auto;
+    }
+    .welcome-message {
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo Devlink.jpg" alt="DevLink Logo">
+    </div>
+    <h1>Welcome to DevLink!</h1>
+    <p class="welcome-message">Hey <span id="recipient"></span>,</p>
+    <p>Thank you for joining DevLink. We are excited to have you on board! Explore our platform and connect with other developers around the world.</p>
+    <p>If you have any questions or need assistance, feel free to contact our support team.</p>
+    <p>Happy coding!</p>
+    <p>
+      <a class="btn" href="http://localhost:3000">Visit DevLink</a>
+    </p>
+  </div>
+<script> 
+ // Get the recipient email address from the URL query string
+ const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const recipient = urlParams.get('email');
+
+    // Insert the recipient email address into the welcome message
+    const recipientElement = document.getElementById('recipient');
+    recipientElement.textContent = recipient;
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+.find-jobs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.filter-input {
+  width: 400px;
+  margin-left: 10%;
+}
+
+input.filter-input {
+  position: relative;
+  width: 400px;
+  margin-left: 35%;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.job-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.job-card {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex; /* Use flexbox to make buttons appear in a row */
+  margin-right: 38%;
+  gap: 1px; /* Add some spacing between the buttons */
+}
+
+.button-container button {
+  margin-right: 10px;
+  width: 200px;
+  flex: 1; /* Use flex: 1 to allow buttons to equally distribute the available space */
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent button text from wrapping to multiple lines */
+}
+
+.job-card h3 {
+  margin: 0;
+}
+
+.job-card p {
+  margin: 5px 0;
+}
